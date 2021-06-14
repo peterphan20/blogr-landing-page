@@ -4,25 +4,31 @@ import desktopLaptop from "../images/illustration-laptop-desktop.svg";
 
 const Field = () => {
 	return (
-		<div>
-			<picture>
-				<source media="(min-width:1050px)" srcSet={desktopLaptop} />
-				<img src={mobileLaptop} className="mt-10" />
-			</picture>
-			<div className="pt-5 pb-14 px-10 text-center">
-				<h1 className="py-7 text-blue-heading text-3xl font-semibold">Free, open, simple</h1>
-				<p className="text-l font-overpass font-md text-blue-bodyCopy">
-					Blogr is a free and open source application backed by a large community of helpful
-					developers. It supports features such as code syntax highlighting, RSS feeds, social media
-					integration, third-party commenting tools, and works seamlessly with Google Analytics. The
-					architecture is clean and is relatively easy to learn.
-				</p>
-				<h1 className="py-7 text-blue-heading text-3xl font-semibold">Powerful tooling</h1>
-				<p className="text-l font-overpass font-md text-blue-bodyCopy">
-					Batteries included. We built a simple and straightforward CLI tool that makes
-					customization and deployment a breeze, but capable of producing even the most complicated
-					sites.
-				</p>
+		<div className="py-12 px-10">
+			<div className="flex flex-col items-center justify-center lg:flex-row justify-start items-start">
+				<picture className="pb-10">
+					<source media="(min-width:1028px)" srcSet={desktopLaptop} alt="desktop editor design" />
+					<img src={mobileLaptop} alt="mobile editor design" />
+				</picture>
+				<div className="flex flex-col justify-center items-center">
+					<h1 className="text-blue-heading font-ubuntu text-2xl text-center font-medium pb-5 lg:self-start px-72">
+						Introducing an extensible editor
+					</h1>
+					<p className="text-blue-bodyCopy font-overpass text-md text-center pb-8 lg:text-left px-72">
+						Blogr features an exceedingly intuitive interface which lets you focus on one thing:
+						creating content. The editor supports management of multiple blogs and allows easy
+						manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins
+						and themes provide easy ways to add functionality or change the looks of a blog.
+					</p>
+					<h1 className="text-blue-heading font-ubuntu text-2xl text-center font-medium pb-5 lg:self-start px-72">
+						Robust content management
+					</h1>
+					<p className="text-blue-bodyCopy font-overpass text-md text-center lg:text-left px-72">
+						Flexible content management enables users to easily move through posts. Increase the
+						usability of your blog by adding customized categories, sections, format, or flow. With
+						this functionality, you’re in full control.
+					</p>
+				</div>
 			</div>
 		</div>
 	);

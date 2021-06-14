@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			backgroundImage: (theme) => ({
 				introPattern: "url('./images/bg-pattern-intro.svg')",
+				circlePattern: "url('./images/bg-pattern-intro.svg')",
 			}),
 			colors: {
 				blue: {
